@@ -24,26 +24,6 @@ body{
     flex-direction: column;
 }
 
-header{
-    position: sticky;
-    top:0;
-    z-index: 50;
-    width: 100%;
-}
-
-.navbarcss{
-    background-color: #000000;
-    height: 85px;
-    display: flex;
-    justify-content: center;
-}
-
-#logoNavbar{
-    width: 200px;
-    height: 90%;
-    padding: 5px;
-    align-items: center;
-}
 
 main{
     margin-top: 100px;
@@ -281,23 +261,6 @@ input{
     align-items: center;
     border: 2px solid #90a955;
     border-radius: 50%;
-}
-
-.pie-pagina{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.pie-pagina .grupo-2{
-    background-color: #000000;
-    padding: 1px;
-    text-align: center;
-    color: #ecf39e;
-}
-.pie-pagina .grupo-2 small{
-    font-size: 13px;
-    letter-spacing: 2px;
 }
 
 @media only screen and (max-width:768px){
