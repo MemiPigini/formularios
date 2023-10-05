@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alumnos de Rolling Code School">
+    <meta name="description" content="E-commerce de venta de mates, termos, yerbas y accesorios">
+    <meta name="keywords" content="mate, mate argentino, termos, yerbas, set materos, informacion mate">
+    <link rel="icon" href="/assets/img/Logo re mate redondo.png">
+    <script src="https://kit.fontawesome.com/990e1bab89.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid  navbarcss">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/img/Logo_Re_Mate_Blanco.png" id="logoNavbar" alt="Logo Re Mate">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="container">
+            <div class="formulario_container sign_up_container">
+                <form action="#" id="signupForm">
+                    <h2>Registro</h2>
+                    <div class="social_container">
+                        <a href="https://www.facebook.com/" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.google.com/intl/es/gmail/about/" class="social" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="https://www.linkedin.com/" class="social"><i class="fab fa-linkedin-in" target="_blank"></i></a>
+                    </div>
+                    <p>O registrate con tu correo electrónico!</p>
+                    <input type="text" placeholder="Nombre" id="name" required autofocus>
+                    <input type="text" placeholder="Apellido" id="surname" required>
+                    <input type="email" placeholder="Correo electrónico" id="email">
+                    <input type="password" placeholder="Contraseña (debe contener al menos 8 carácteres)" id="password">
+                    <div class="terminos_y_condiciones">
+                        <input type="checkbox" id="checkbox_terminos" required>
+                        <label for="checkbox_terminos" required><a href="/pages/Error404.html">Acepto Términos y Condiciones</a></label>
+                    </div>
+                    <input type="submit" value="Crear cuenta" class="boton" onclick="registro(event)">
+                </form>
+            </div>
+            <div class="formulario_container sign_in_container">
+                <form action="#" id="loginForm">
+                    <h2>Iniciar sesión</h2>
+                    <input type="email" id="emailLogin" placeholder="Correo electrónico" autofocus>
+                    <input type="password" id="passwordLogin" placeholder="Contrasena">
+                    <a href="/pages/Error404.html">Olvidaste tu contraseña?</a>
+                    <input type="submit" value="Ingresar" class="boton" onclick="login(event)">
+                    <p>O ingresá con tu red social!</p>
+                    <div class="social_container">
+                        <a href="https://www.facebook.com/" class="social" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.google.com/intl/es/gmail/about/" class="social" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="https://www.linkedin.com/" class="social" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>       
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h2>Bienvenido!</h2>
+                        <p>Estamos muy felices de que seas parte <br> de nuestra comunidad matera!</p>
+                        <button class="ghost" id="signIn">Ya tengo una cuenta</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h2>Nuevo en nuestra web?</h2>
+                        <p>Forma parte de nuestra comunidad <br> para acceder a nuestros productos y obtené beneficios increíbles!</p>
+                        <button  id="signUp">Crear cuenta</button>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Re Mate</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="/formularios.js"></script>
+</body>
+</html>
